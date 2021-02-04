@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Groot Formulier!</title>
+</head>
+<body>
+    <header>
+        <h1>Jouw recept op de website!</h1>
+    </header>
+    <main>
+            <form name="recept-input" data-netlify="true">
+                <p><label name="name">Naam:<input type="text" name="name"/></label></p>
+                <p><label name="email">Email:<input type="email" name="email" /></label></p>
+                <p><label name="tel">Telefoon:<input type="tel" name="tel" /></label></p>
+                <p><label name="age">Leeftijd:<input type="text" name="age" /></label></p>
+                <p><label name="dob">Geboortedatum:<input type="date" name="dob" /></label></p>
+               
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Man</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Vrouw</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Anders</label>
+
+ 
+                <p><label>Wat is jouw favoriete cuisine?
+                    <input type="checkbox" id="cuisine1" name="cuisine1"/>
+                        <label for="cuisine1">Frans</label>
+                    <input type="checkbox" id="cuisine2" name="cuisine2" />
+                    <label for="cuisine2">Italiaans</label>
+                    <input type="checkbox" id="cuisine3" name="cuisine3" />
+                        <label for="spanish">Spanish</label>
+                        <input type="checkbox" id="cuisine4" name="cuisine4" />
+                        <label for="cuisine4">Arabisch</label>
+                    </label></p>
+
+                <p><label name="color">Wat is je favoriete kleur voor een short?
+                    <input type="color" name="favcolor" value="red"/>
+                </label></p>
+
+                <p><textarea name="bio" rows="10" cols="50">Schrijf hier kort iets over jezelf...</textarea></p>
+                <p><label name="recipe">Upload je recept:</label>
+                    <input type="file" name="recipe"/></p>
+
+                <p><label>Deel hier URL van jouw recepten website:<input type="url" name="url"/></label></p>
+
+                <input type="reset" value="Formulier leegmaken" name="reset-btn" />
+                of
+                    <input type="submit" value="Verzenden!" name="submit-btn"/>
+            </form>
+    </main>
+</body>
+</html>
